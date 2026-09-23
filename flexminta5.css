@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    margin: auto;
 }
 main {
     max-width: 800px;
@@ -45,13 +44,13 @@ nav li:hover {
 .container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
 }
 .card {
     background-color: gray;
-    flex: 0 0 calc( 33% - 10px);
+    flex: 0 1 auto;
     margin: 5px;
 }
 .card h1 {
